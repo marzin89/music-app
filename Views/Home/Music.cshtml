@@ -1,0 +1,66 @@
+﻿<!-- Musik-sidan -->
+@model List<MusicApp.Models.MusicModel>
+
+@{
+	// Sidans namn
+	ViewData["title"] = "Musik";
+}
+
+<h1 id="h1-music">Musik</h1>
+
+<!-- Kontrollerar att listan inte är tom -->
+@if(Model.Count > 0)
+{
+	<!-- Loopar igenom listan och skriver ut varje skiva -->
+	@foreach (var album in Model)
+	{
+		<table class="album first-page">
+			<tr>
+				<td class="table-header">Namn</td>
+				<td>@album.Name</td>
+			</tr>
+			<tr>
+				<td class="table-header">Artist</td>
+				<td>@album.Artist</td>
+			</tr>
+			<tr>
+				<td class="table-header">År</td>
+				<td>@album.Year</td>
+			</tr>
+
+			@if (@album.Length != null)
+			{
+				<tr>
+					<td class="table-header">Längd</td>
+					<td>@album.Length</td>
+				</tr>
+			}
+
+			@if (@album.Label != null)
+			{
+				<tr>
+					<td class="table-header">Skivbolag</td>
+					<td>@album.Label</td>
+				</tr>
+			}
+
+			<tr>
+				<td class="table-header">Genre</td>
+				<td>@album.Genre</td>
+			</tr>
+
+			@if (@album.Rating != null)
+			{
+				<tr>
+					<td class="table-header">Betyg</td>
+					<td>@album.Rating</td>
+				</tr>
+			}
+		</table>
+	}
+}
+else
+{
+	// Skriver ut ett felmeddelande om listan är tom
+	<p>Listan är tom.</p>
+}

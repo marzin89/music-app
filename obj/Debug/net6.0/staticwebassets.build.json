@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "7XykjJqkvEOnLtXPARUElPtFkTnKFwK0s4YJtgsXwM4=",
+  "Source": "MusicApp",
+  "BasePath": "_content/MusicApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MusicApp\\wwwroot",
+      "Source": "MusicApp",
+      "ContentRoot": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment2\\MusicApp\\MusicApp\\wwwroot\\",
+      "BasePath": "_content/MusicApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment2\\MusicApp\\MusicApp\\wwwroot\\albums.json",
+      "SourceId": "MusicApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment2\\MusicApp\\MusicApp\\wwwroot\\",
+      "BasePath": "_content/MusicApp",
+      "RelativePath": "albums.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\albums.json"
+    },
+    {
+      "Identity": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment2\\MusicApp\\MusicApp\\wwwroot\\css\\styles.css",
+      "SourceId": "MusicApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment2\\MusicApp\\MusicApp\\wwwroot\\",
+      "BasePath": "_content/MusicApp",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment2\\MusicApp\\MusicApp\\wwwroot\\images\\bakgrund-mellan.jpg",
+      "SourceId": "MusicApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment2\\MusicApp\\MusicApp\\wwwroot\\",
+      "BasePath": "_content/MusicApp",
+      "RelativePath": "images/bakgrund-mellan.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bakgrund-mellan.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment2\\MusicApp\\MusicApp\\wwwroot\\images\\bakgrund-stor.jpg",
+      "SourceId": "MusicApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment2\\MusicApp\\MusicApp\\wwwroot\\",
+      "BasePath": "_content/MusicApp",
+      "RelativePath": "images/bakgrund-stor.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bakgrund-stor.jpg"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+﻿<!-- Undersida för utvald skiva -->
+@model MusicApp.Models.MusicModel
+
+@{
+	// Sidans namn
+	ViewData["title"] = ViewBag.Name;
+}
+
+<!-- Artist samt skivans namn -->
+<h1>@ViewBag.Artist – @ViewBag.Name</h1>
+
+<!-- Om 400 finns lagrat i ViewBag, så har sessionen gått ut -->
+@if(ViewBag.Name == "400")
+{
+	<p>Sessionen har gått ut. Det går inte att visa innehållet.
+		Gå tillbaka till startsidan och klicka på länken inom tio minuter för att visa innehållet.</p>
+}
+else
+{
+	// Om sessionen inte har gått ut, skrivs skivan ut
+	<table class="album">
+		<tr>
+			<td class="table-heading">Artist</td>
+			<td>@ViewBag.Artist</td>
+		</tr>
+		<tr>
+			<td class="table-heading">År</td>
+			<td>@ViewBag.Year</td>
+		</tr>
+
+		@if(ViewBag.Length != null)
+		{
+			<tr>
+				<td class="table-heading">Längd</td>
+				<td>@ViewBag.Length</td>
+			</tr>
+		}
+
+		@if(ViewBag.Label != null)
+		{
+			<tr>
+				<td class="table-heading">Skivbolag</td>
+				<td>@ViewBag.Label</td>
+			</tr>
+		}
+
+		<tr>
+			<td class="table-heading">Genre</td>
+			<td>@ViewBag.Genre</td>
+		</tr>
+
+		@if(ViewBag.Rating != null)
+		{
+			<tr>
+				<td class="table-heading">Betyg</td>
+				<td>@ViewBag.Rating</td>
+			</tr>
+		}
+	</table>
+
+	<p id="first-paragraph">Earl Grey ipsum dolor sit amet Russian Caravan Peppermint Assam 
+	Bancha Keemun Tie Kuan Yin Twinings Lipton Tie Kuan Yin Lapsang 
+	Souchong Chai Bancha Lapsang Souchong Lipton Assam Darjeeling 
+	Chai Hojicha Gunpowder Pu Erh.</p>
+	<p>Peppermint Tie Kuan Yin Russian Caravan Yerba Mate Nilgiri 
+		Yunnan Sencha Chai Yerba Mate Tie Kuan Yin Chai Tetley Keemun 
+		Dong Ding Biluochun Nilgiri Longjing Bai Mudan Biluochun Chamomile.</p>
+	
+	<!-- Här kan användaren betygsätta skivan om så inte har gjorts tidigare -->
+	@if(ViewBag.Rating == null)
+	{
+		<form method="post">
+			<label asp-for="Rating">Betygsätt skivan</label>
+			<select asp-for="Rating">
+				<option>Usel</option>
+				<option>Dålig</option>
+				<option>Bra</option>
+				<option>Mycket bra</option>
+				<option>Perfekt</option>
+			</select>
+			<input id="submit" type="submit" value="Spara">
+		</form>
+	}
+
+	<!-- Här skrivs antingen ett bekräftelsemeddelande eller ett felmeddelande ut
+		beroende på om det gick att lägga till betyget eller inte -->
+	@if(ViewBag.Confirm != null)
+	{
+	<p id="confirm">@ViewBag.Confirm</p>
+	}
+	else if (ViewBag.Error != null)
+	{
+		<p id="error">@ViewBag.Error</p>
+	}
+}

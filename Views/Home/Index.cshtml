@@ -1,0 +1,71 @@
+﻿<!-- Startsidan -->
+@model MusicApp.Views.Home.IndexModel
+
+@{
+	// Sidans namn
+	ViewData["title"] = "Start";
+}
+
+<h1>Start</h1>
+<p id="first-paragraph">Earl Grey ipsum dolor sit amet Russian Caravan Peppermint Assam 
+	Bancha Keemun Tie Kuan Yin Twinings Lipton Tie Kuan Yin Lapsang 
+	Souchong Chai Bancha Lapsang Souchong Lipton Assam Darjeeling 
+	Chai Hojicha Gunpowder Pu Erh.</p>
+<p>Peppermint Tie Kuan Yin Russian Caravan Yerba Mate Nilgiri 
+	Yunnan Sencha Chai Yerba Mate Tie Kuan Yin Chai Tetley Keemun 
+	Dong Ding Biluochun Nilgiri Longjing Bai Mudan Biluochun Chamomile.</p>
+
+<!-- Här presenteras den slumpmässigt utvalda skivan -->
+<!-- Kontrollerar att det finns något att läsa ut (listan på skivor är inte tom) -->
+@if(ViewData["name"] != null)
+{
+	<h2>Dagens skiva</h2>
+	<table id="featured-album">
+		<tr>
+			<td class="table-header">Namn</td>
+			<td>@ViewData["name"]</td>
+		</tr>
+		<tr>
+			<td class="table-header">Artist</td>
+			<td>@ViewData["artist"]</td>
+		</tr>
+		<tr>
+			<td class="table-header">År</td>
+			<td>@ViewData["year"]</td>
+		</tr>
+
+		@if(ViewData["length"] != null)
+		{
+			<tr>
+				<td class="table-header">Längd</td>
+				<td>@ViewData["length"]</td>
+			</tr>
+		}
+
+		@if(ViewData["label"] != null)
+		{
+			<tr>
+				<td class="table-header">Skivbolag</td>
+				<td>@ViewData["label"]</td>
+			</tr>
+		}
+
+		<tr>
+			<td class="table-header">Genre</td>
+			<td>@ViewData["genre"]</td>
+		</tr>
+
+		@if(ViewData["rating"] != null)
+		{
+			<tr>
+				<td class="table-header">Betyg</td>
+				<td>@ViewData["rating"]</td>
+			</tr>
+		}
+
+		<tr>
+			<td><a asp-controller="Home" asp-action="Album">Läs mer</a></td>
+			<td></td>
+		</tr>
+	</table>
+}

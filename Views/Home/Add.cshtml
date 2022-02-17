@@ -1,0 +1,41 @@
+﻿<!-- Lägg till skivor -->
+@model MusicApp.Models.MusicModel
+
+@{
+	// Sidans namn
+	ViewData["title"] = "Lägg till";
+}
+
+<!-- Formulär med felhantering för obligatoriska fält -->
+<h1 id="h1-add">Lägg till musik</h1>
+<form method="post">
+	<label asp-for="Name"></label>
+	<input asp-for="Name" />
+	<span asp-validation-for="Name"></span>
+	<label asp-for="Artist"></label>
+	<input asp-for="Artist" />
+	<span asp-validation-for="Artist"></span>
+	<label asp-for="Year"></label>
+	<input asp-for="Year" />
+	<span asp-validation-for="Year"></span>
+	<label asp-for="Length"></label>
+	<input asp-for="Length" />
+	<label asp-for="Label"></label>
+	<input asp-for="Label" />
+	<label asp-for="Genre"></label>
+	<input asp-for="Genre" />
+	<span asp-validation-for="Genre"></span>
+	<input id="submit" type="submit" value="Lägg till" />
+	<input id="reset" type="reset" value="Rensa" />
+</form>
+
+<!-- Här skrivs antingen ett bekräftelsemeddelande eller ett felmeddelande ut
+	beroende på om det gick att lägga till skivan eller inte -->
+@if(ViewData["confirm"] != null)
+{
+	<p id="confirm">@ViewData["confirm"]</p>
+}
+else if(ViewData["error"] != null)
+{
+	<p id="error">@ViewData["error"]</p>
+}

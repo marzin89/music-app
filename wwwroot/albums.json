@@ -1,0 +1,182 @@
+[
+  {
+    "Name": "Illmatic",
+    "Artist": "Nas",
+    "Year": "1994",
+    "Length": null,
+    "Label": null,
+    "Genre": "\u00D6stkusthiphop",
+    "Rating": "Perfekt"
+  },
+  {
+    "Name": "Me Against the World",
+    "Artist": "2pac",
+    "Year": "1995",
+    "Length": "65:00",
+    "Label": "Interscope, Jive",
+    "Genre": "V\u00E4stkusthiphop",
+    "Rating": null
+  },
+  {
+    "Name": "Ready to Die",
+    "Artist": "The Notorious B.I.G.",
+    "Year": "1994",
+    "Length": null,
+    "Label": "Bad Boy",
+    "Genre": "Gangsterrap",
+    "Rating": null
+  },
+  {
+    "Name": "Enter the Wu-Tang (36 Chambers)",
+    "Artist": "Wu-Tang Clan",
+    "Year": "1993",
+    "Length": "58:26",
+    "Label": "Loud",
+    "Genre": "\u00D6stkusthiphop",
+    "Rating": "Perfekt"
+  },
+  {
+    "Name": "Nocturnal",
+    "Artist": "Heltah Skeltah",
+    "Year": "1996",
+    "Length": null,
+    "Label": "Duck Down, Priority",
+    "Genre": "Hardcore-hiphop",
+    "Rating": "Mycket bra"
+  },
+  {
+    "Name": "Midnight Marauders",
+    "Artist": "A Tribe Called Quest",
+    "Year": "1993",
+    "Length": "51:12",
+    "Label": null,
+    "Genre": "Alternativ hip hop",
+    "Rating": "Perfekt"
+  },
+  {
+    "Name": "Moment of Truth",
+    "Artist": "Gang Starr",
+    "Year": "1998",
+    "Length": null,
+    "Label": null,
+    "Genre": "\u00D6stkusthiphop",
+    "Rating": null
+  },
+  {
+    "Name": "The Score",
+    "Artist": "Fugees",
+    "Year": "1996",
+    "Length": "60:52",
+    "Label": "Ruffhouse, Columbia",
+    "Genre": "Alternativ hip hop",
+    "Rating": null
+  },
+  {
+    "Name": "The Chronic",
+    "Artist": "Dr Dre",
+    "Year": "1992",
+    "Length": null,
+    "Label": "Death Row",
+    "Genre": "Gangsterrap",
+    "Rating": null
+  },
+  {
+    "Name": "The Infamous",
+    "Artist": "Mobb Deep",
+    "Year": "1995",
+    "Length": null,
+    "Label": "Loud, RCA",
+    "Genre": "Hardcore-hiphop",
+    "Rating": null
+  },
+  {
+    "Name": "Doggystyle",
+    "Artist": "Snoop Dogg",
+    "Year": "1993",
+    "Length": null,
+    "Label": "Death Row",
+    "Genre": "Gangsterrap",
+    "Rating": "Mycket bra"
+  },
+  {
+    "Name": "Reasonable Doubt",
+    "Artist": "Jay-Z",
+    "Year": "1996",
+    "Length": "55:32",
+    "Label": "Roc-a-Fella, Priority",
+    "Genre": "\u00D6stkusthiphop",
+    "Rating": "Mycket bra"
+  },
+  {
+    "Name": "Straight Outta Compton",
+    "Artist": "N.W.A.",
+    "Year": "1988",
+    "Length": null,
+    "Label": null,
+    "Genre": "Gangsterrap",
+    "Rating": null
+  },
+  {
+    "Name": "Death Certificate",
+    "Artist": "Ice Cube",
+    "Year": "1991",
+    "Length": "60:59",
+    "Label": "Lench Mob, Priority",
+    "Genre": "V\u00E4stkusthiphop",
+    "Rating": "Perfekt"
+  },
+  {
+    "Name": "De La Soul Is Dead",
+    "Artist": "De La Soul",
+    "Year": "1991",
+    "Length": "73:30",
+    "Label": "Tommy Boy, Warner Bros.",
+    "Genre": "Alternativ hip hop",
+    "Rating": "Perfekt"
+  },
+  {
+    "Name": "Southernplayalisticadillacmuzik",
+    "Artist": "Outkast",
+    "Year": "1994",
+    "Length": null,
+    "Label": null,
+    "Genre": "Southern hip hop",
+    "Rating": null
+  },
+  {
+    "Name": "Only Built 4 Cuban Linx...",
+    "Artist": "Raekwon",
+    "Year": "1995",
+    "Length": null,
+    "Label": null,
+    "Genre": "Mafioso rap",
+    "Rating": null
+  },
+  {
+    "Name": "Resurrection",
+    "Artist": "Common",
+    "Year": "1994",
+    "Length": null,
+    "Label": "Relativity",
+    "Genre": "Conscious hip hop",
+    "Rating": null
+  },
+  {
+    "Name": "Thriller",
+    "Artist": "Michael Jackson",
+    "Year": "1982",
+    "Length": null,
+    "Label": null,
+    "Genre": "Pop",
+    "Rating": null
+  },
+  {
+    "Name": "Thriller",
+    "Artist": "Michael Jackson",
+    "Year": "1982",
+    "Length": null,
+    "Label": null,
+    "Genre": "Pop",
+    "Rating": null
+  }
+]

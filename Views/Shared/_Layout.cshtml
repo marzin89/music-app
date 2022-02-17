@@ -1,0 +1,39 @@
+﻿<!-- Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!-- Sidans namn -->
+    <title>@ViewData["title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- Sidhuvud -->
+        <header>
+            <div id="header-wrapper">
+                <nav>
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index" class="navlink">Start</a></li>
+                        <li><a asp-controller="Home" asp-action="Music" class="navlink">Musik</a></li>
+                        <li><a asp-controller="Home" asp-action="Add" class="navlink">Lägg till</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Innehåll -->
+        <main>
+            @RenderBody()
+        </main>
+
+        <!-- Sidfot -->
+        <footer>
+            <div id="footer-wrapper">
+                <p id="copyright">Copyright 2022</p>
+            </div>
+        </footer>
+    </div> 
+    <script src="~/main.js"></script>
+</body>
+</html>
